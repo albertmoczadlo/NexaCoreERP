@@ -7,15 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NexaCoreERP", "NexaCoreERP\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NexaCoreERP.Client", "NexaCoreERP\NexaCoreERP.Client\NexaCoreERP.Client.csproj", "{AE04CEEB-E517-42D3-A2F6-B342D2C9504D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexaCoreERP.Application", "NexaCoreERP.Application\NexaCoreERP.Application.csproj", "{7B1AB3FC-BC24-4215-9B9B-EA335D241741}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NexaCoreERP.Application", "NexaCoreERP.Application\NexaCoreERP.Application.csproj", "{7B1AB3FC-BC24-4215-9B9B-EA335D241741}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexaCoreERP.Domain", "NexaCoreERP.Domain\NexaCoreERP.Domain.csproj", "{F3ABFC35-6474-4F44-8997-FB924B7A5C70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NexaCoreERP.Domain", "NexaCoreERP.Domain\NexaCoreERP.Domain.csproj", "{F3ABFC35-6474-4F44-8997-FB924B7A5C70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexaCoreERP.Infrastructure", "NexaCoreERP.Infrastructure\NexaCoreERP.Infrastructure.csproj", "{7137DF42-E4BF-40A1-AC70-0BEA25AADCFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NexaCoreERP.Infrastructure", "NexaCoreERP.Infrastructure\NexaCoreERP.Infrastructure.csproj", "{7137DF42-E4BF-40A1-AC70-0BEA25AADCFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexaCoreERP.Shared", "NexaCoreERP.Shared\NexaCoreERP.Shared.csproj", "{4DA3BAAE-0989-4165-822C-906E962EFBA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NexaCoreERP.Shared", "NexaCoreERP.Shared\NexaCoreERP.Shared.csproj", "{4DA3BAAE-0989-4165-822C-906E962EFBA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexaCoreERP.WebApi", "NexaCoreERP.WebApi\NexaCoreERP.WebApi.csproj", "{B87C6445-8C61-4ACB-BD8E-ACE6CE6D08A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NexaCoreERP.WebApi", "NexaCoreERP.WebApi\NexaCoreERP.WebApi.csproj", "{B87C6445-8C61-4ACB-BD8E-ACE6CE6D08A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

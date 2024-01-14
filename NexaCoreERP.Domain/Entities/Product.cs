@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NexaCoreERP.Domain.Entities
 {
-    internal class Product
+    public class Product
     {
     }
 }
