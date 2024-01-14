@@ -1,6 +1,21 @@
 using NexaCoreERP.WebApi.Middlewares;
+using NLog.Web;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Logging.ClearProviders();
+builder.Logging.SetMinimumLevel(LogLevel.Information);
+builder.Logging.AddNLogWeb();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy", builder =>
+    {
+        builder.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader();
+    });
+});
 
 // Add services to the container.
 
@@ -21,6 +36,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
 
