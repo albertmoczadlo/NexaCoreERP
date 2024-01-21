@@ -11,7 +11,7 @@ builder.Services.AddRazorComponents()
 
 var uri = new Uri(builder.Configuration["ApiConfiguration:BaseAddress"] + "api/");
 
-builder.Services.AddClient();
+builder.Services.AddClient(uri);
 
 var app = builder.Build();
 

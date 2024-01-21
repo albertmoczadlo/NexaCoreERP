@@ -1,4 +1,7 @@
-﻿namespace NexaCoreERP.Client
+﻿using NexaCoreERP.Client.HttpRespository;
+using NexaCoreERP.Client.HttpRespository.Interfaces;
+
+namespace NexaCoreERP.Client
 {
     public static class DependencyInjection
     {
@@ -12,6 +15,9 @@
 
             services.AddScoped(sp=>
             sp.GetService<IHttpClientFactory>().CreateClient("NexaCoreErp"));
+
+            services.AddScoped<IProductHttpRepository, 
+                ProductHttpRepository>();
 
             return services;
         }
