@@ -9,6 +9,8 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
 
+var uri = new Uri(builder.Configuration["ApiConfiguration:BaseAddress"] + "api/");
+
 builder.Services.AddClient();
 
 var app = builder.Build();

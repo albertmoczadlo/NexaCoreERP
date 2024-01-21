@@ -3,6 +3,11 @@ using NexaCoreERP.Client;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 
-builder.Services.AddClient();
+var uri = new Uri(builder.Configuration["ApiConfiguration:BaseAddress"]+"api/");
+
+builder.Services.AddClient(uri);
 
 await builder.Build().RunAsync();
+
+
+
