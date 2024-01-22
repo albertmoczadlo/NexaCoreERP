@@ -19,7 +19,10 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext
 
     public DbSet<Product> Products { get; set; }
     public DbSet<Order> Orders { get; set; }
-
+    public DbSet<OrderDetail> OrderDetails { get; set; }
+    public DbSet<ProductionOrder> ProductionOrders { get; set; }
+    public DbSet<ProductionOrderDetail> ProductionOrderDetails { get; set; }
+    public DbSet<Inventory> Inventories { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace NexaCoreERP.Domain.Entities
 {
-    public class Product
+    public class OrderDetail
     {
-        public int Id { get; set; }
-        public string ProductName { get; set; }
+        public int OrderDetailId { get; set; }
+        public int OrderId { get; set; }
+        public int ProductId { get; set; }
     }
 }

@@ -9,11 +9,7 @@ namespace NexaCoreERP.Domain.Entities
     public class Order
     {
         public int Id { get; set; }
-        public string OrderName { get; set; }
-        public int OrderQuantity { get; set; }
+        public string Status { get; set; } //nowe, przyjete do realizacji, skonczone
         public DateTime OrderDate { get; set; }
-        public int ProductId { get; set; }
-
-        public Product Product { get; set; }
     }
 }
