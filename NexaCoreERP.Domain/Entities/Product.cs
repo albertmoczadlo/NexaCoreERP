@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace NexaCoreERP.Domain.Entities
 {
@@ -10,5 +6,8 @@ namespace NexaCoreERP.Domain.Entities
     {
         public int Id { get; set; }
         public string ProductName { get; set; }
+
+        public ICollection<OrderDetail> OrderDetails { get; set; }
+        public ICollection<Inventory> Inventories { get; set; }
     }
 }

@@ -11,5 +11,11 @@ namespace NexaCoreERP.Domain.Entities
         public int Id { get; set; }
         public string Status { get; set; } //nowe, przyjete do realizacji, skonczone
         public DateTime OrderDate { get; set; }
+        public int DepartmentId { get; set; }
+
+
+        public Department Department { get; set; }
+        public ICollection<OrderDetail> OrderDetails { get; set; }
+        public ProductionOrder ProductionOrder { get; set; }
     }
 }

@@ -9,5 +9,7 @@ public class ProductConfiguration: IEntityTypeConfiguration<Product>
     public void Configure(EntityTypeBuilder<Product> builder)
     {
         builder.ToTable("Products");
+
+        builder.Property(p=>p.ProductName).HasMaxLength(60).IsRequired();
     }
 }
